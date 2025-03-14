@@ -31,6 +31,36 @@
     header span {
         font-size: 2rem;
     }
+
+    #banners {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .subscription-banner {
+        animation: backgroundLegal 1s alternate infinite;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+    }
+
+    .subscription-banner button {
+        padding: .5rem 1rem;
+    }
+
+    @keyframes backgroundLegal {
+        from {
+            background: red;
+        }
+
+        to {
+            background: yellow;
+        }
+    }
 </style>
 
 <body>
@@ -38,8 +68,19 @@
         <img src="https://ifsul.edu.br/templates/padraogoverno01/img/img_logo_ifsul.png" alt="">
         <span>Campus Candiota</span>
     </header>
-    <img src="https://media.gettyimages.com/id/530703778/pt/foto/holding-a-handful-of-coal.jpg?s=612x612&w=gi&k=20&c=ooXYSxNjkuQ0WdWfeJr0LAabolKdR5AcSYN9i5mG4Ao="
-        alt="">
+    <main>
+        <section id="banners">
+            <div>
+                <img src="https://media.gettyimages.com/id/530703778/pt/foto/holding-a-handful-of-coal.jpg?s=612x612&w=gi&k=20&c=ooXYSxNjkuQ0WdWfeJr0LAabolKdR5AcSYN9i5mG4Ao="
+                    alt="">
+            </div>
+            <div class="subscription-banner">
+                <h2>VESTIBULAR 2025/2</h2>
+                <p>Se inscreva no botão abaixo.</p>
+                <button onclick="window.location.href = '/ifsul-caca/inscricao'">Se Inscrever</button>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
