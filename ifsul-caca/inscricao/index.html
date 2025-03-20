@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscreva-se | IFSul - Campus Candiota</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      padding-block: 1rem;
+      padding-inline: 1.5rem;
+      background: #195128;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      font-weight: 700;
+    }
+
+    header span {
+      font-size: 2rem;
+    }
+
+    main {
+      padding: 1rem;
+    }
+
+    main h1 {
+      margin-bottom: 1rem;
+    }
+
+    #banners {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .tutorial {
+      padding: 1rem;
+      border: 1px solid red;
+    }
+
+    .tutorial video {
+      height: 400px;
+    }
+
+    .download-banner {
+      background: #195128;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .download-banner button {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+    }
+  </style>
+  <body>
+    <header>
+      <img
+        src="https://ifsul.edu.br/templates/padraogoverno01/img/img_logo_ifsul.png"
+        alt=""
+      />
+      <span>Campus Candiota</span>
+    </header>
+    <main>
+      <h1>Realize sua Inscrição no IFSul CaCa</h1>
+      <section id="banners">
+        <div class="tutorial">
+          <h2>Veja o Tutorial!!</h2>
+          <video src="../tutorial-inscricao.mp4" controls></video>
+        </div>
+        <div class="download-banner">
+          <h2>Faça Download do SUAP-CACA</h2>
+          <button onclick="window.location.href = './MatriculaIFSulCaCa.por'">
+            Download
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
