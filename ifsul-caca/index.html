@@ -1,86 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IFSul - Campus Candiota</title>
-</head>
+  </head>
 
-<style>
-    @import url('https://fonts.cdnfonts.com/css/sans-comic-sans');
+  <style>
+    @import url("https://fonts.cdnfonts.com/css/sans-comic-sans");
 
     * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
     }
 
     header {
-        padding-block: 1rem;
-        padding-inline: 1.5rem;
-        background: #195128;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        gap: 1.5rem;
-        font-weight: 700;
+      padding-block: 1rem;
+      padding-inline: 1.5rem;
+      background: #195128;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      font-weight: 700;
     }
 
     header span {
-        font-size: 2rem;
+      font-size: 2rem;
     }
 
     #banners {
-        padding: 1rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
     }
 
     .subscription-banner {
-        animation: backgroundLegal 1s alternate infinite;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: .5rem;
+      animation: backgroundLegal 1s alternate infinite;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
     }
 
     .subscription-banner button {
-        padding: .5rem 1rem;
+      padding: 0.5rem 1rem;
     }
 
     @keyframes backgroundLegal {
-        from {
-            background: red;
-        }
+      from {
+        background: red;
+      }
 
-        to {
-            background: yellow;
-        }
+      to {
+        background: yellow;
+      }
     }
-</style>
+  </style>
 
-<body>
+  <body>
     <header>
-        <img src="https://ifsul.edu.br/templates/padraogoverno01/img/img_logo_ifsul.png" alt="">
-        <span>Campus Candiota</span>
+      <img
+        src="https://ifsul.edu.br/templates/padraogoverno01/img/img_logo_ifsul.png"
+        alt=""
+      />
+      <span>Campus Candiota</span>
     </header>
     <main>
-        <section id="banners">
-            <div>
-                <img src="https://media.gettyimages.com/id/530703778/pt/foto/holding-a-handful-of-coal.jpg?s=612x612&w=gi&k=20&c=ooXYSxNjkuQ0WdWfeJr0LAabolKdR5AcSYN9i5mG4Ao="
-                    alt="">
-            </div>
-            <div class="subscription-banner">
-                <h2>VESTIBULAR 2025/2</h2>
-                <p>Se inscreva no botão abaixo.</p>
-                <button onclick="window.location.href = '/ifsul-caca/inscricao'">Se Inscrever</button>
-            </div>
-        </section>
+      <section id="banners">
+        <div>
+          <img
+            src="https://media.gettyimages.com/id/530703778/pt/foto/holding-a-handful-of-coal.jpg?s=612x612&w=gi&k=20&c=ooXYSxNjkuQ0WdWfeJr0LAabolKdR5AcSYN9i5mG4Ao="
+            alt=""
+          />
+        </div>
+        <div class="subscription-banner">
+          <h2>VESTIBULAR 2025/2</h2>
+          <p>Se inscreva no botão abaixo.</p>
+          <button onclick="window.location.href = './inscricao/'">
+            Se Inscrever
+          </button>
+        </div>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
